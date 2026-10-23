@@ -1,0 +1,32 @@
+# Raw sequencing and large generated data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.sra
+
+# Generated indices and databases
+salmon_index/
+*.dmnd
+*.pin
+*.phr
+*.psq
+*.pal
+
+# Temporary and machine-specific outputs
+tmp/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+Zone.Identifier
+
+# R and Python local state
+.Rhistory
+.RData
+__pycache__/
+*.py[cod]
+
