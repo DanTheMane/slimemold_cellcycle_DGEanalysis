@@ -1,0 +1,84 @@
+RNA-SEQ LIBRARY TYPE: UNCERTAINTY AND STRAND-BIAS NOTES
+=======================================================
+
+Project:
+Slime-mold cell-cycle transcriptomics
+
+Reference transcriptome:
+GDRG01.fasta
+
+Salmon version:
+2.8.0
+
+Purpose of this note:
+Document uncertainty in library strandedness and the evidence
+observed during preliminary Salmon quantification.
+
+1. DATASET CONTEXT
+------------------
+Pilot sample:
+SRR22705001
+
+A second sample from the same dataset was also tested.
+
+The sequencing data are paired-end RNA-seq reads.
+The original library strandedness has not yet been conclusively
+established from the available SRA metadata or inspected paper methods.
+
+2. PILOT RESULTS
+----------------
+Sample SRR22705001:
+  ISR mapping rate: 69.79%
+  ISF mapping rate: 19.94%
+  IU mapping rate:  88.93%
+
+Second tested sample:
+  ISR mapping rate: 63.98%
+  ISF mapping rate: 17.08%
+  IU mapping rate:  80.13%
+
+For SRR22705001, the ISR run reported:
+  Compatible fragment ratio: approximately 78.49%
+  Incompatible fragments: 4,666,788
+
+The IU run reported a potential strand-bias warning.
+Salmon's inferred format was ISR-like, but the original library
+preparation protocol has not been confirmed.
+
+3. INTERPRETATION AND LIMITATIONS
+---------------------------------
+ISR mapped substantially more fragments than ISF in both tested
+samples. IU mapped the highest proportion of fragments.
+
+The higher IU mapping rate does not establish that the library
+was prepared using an unstranded protocol. Unstranded quantification
+does not enforce a strand-orientation assumption, so its compatibility
+ratio is not directly comparable as evidence of library type.
+
+The observed strand bias and substantial incompatibility under ISR
+remain unresolved. Potential explanations have not yet been
+distinguished.
+
+4. PROVISIONAL ANALYSIS DECISION
+-------------------------------
+IU may be used for exploratory quantification if needed, but this
+is a provisional choice, not a verified description of the original
+library preparation.
+
+The selected library type and its rationale must be documented in
+the analysis records. Results should not be treated as fully validated
+until the uncertainty has been reviewed.
+
+5. FOLLOW-UP
+------------
+- Complete the current Salmon run without interrupting it.
+- Preserve the original pilot outputs and logs.
+- When possible, verify strandedness from the sequencing-library
+  preparation protocol or additional reliable metadata.
+- During quality control, compare mapping rates and strand-bias
+  patterns across samples.
+- Keep the reference-based analysis separate from the parallel
+  de novo assembly and its downstream quantification.
+
+Note created during preliminary analysis. Findings are provisional
+and may be updated when additional evidence becomes available.

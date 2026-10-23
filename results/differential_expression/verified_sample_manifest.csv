@@ -1,0 +1,15 @@
+run_accession,experiment_accession,original_sample_id,source_stage,standardized_stage,quantification_available,analysis_status
+SRR22704993,SRX18667001,S20,early G2 phase,early G2 phase,yes,retain
+SRR22704994,SRX18667000,S10,early G2 phase,early G2 phase,yes,retain
+SRR22705004,SRX18666990,S29,early G2 phase,early G2 phase,yes,retain
+SRR22705005,SRX18666989,S13,early S-phase,early S-phase,yes,retain
+SRR22705006,SRX18666988,S4,early S-phase,early S-phase,yes,retain
+SRR22705000,SRX18666994,S24,early S-phase,early S-phase,yes,retain
+SRR22704995,SRX18666999,S28,late S-phase,late S-phase,yes,retain
+SRR22704996,SRX18666998,S18,late S-phase,late S-phase,yes,retain
+SRR22704997,SRX18666997,S7,late S-phase,late S-phase,no,check/exclude
+SRR22705001,SRX18666993,S22,late phase G2 phase,late G2 phase,yes,retain
+SRR22705002,SRX18666992,S12,late phase G2 phase,late G2 phase,yes,retain
+SRR22705003,SRX18666991,S2,late phase G2 phase,late G2 phase,yes,retain
+SRR22704998,SRX18666996,S16,mid S-phase,mid S-phase,yes,retain
+SRR22704999,SRX18666995,S6,mid S-phase,mid S-phase,yes,retain
